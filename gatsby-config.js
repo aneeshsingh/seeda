@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        baseUrl: "34.125.153.63",
-        protocol: "http",
+        baseUrl: "https://developmentseeda.co",
+        protocol: "https",
         hostingWPCOM: false,
         useACF: true,
       },
@@ -34,7 +34,7 @@ module.exports = {
         // Field name under which it will be available. Used in your Gatsby query. This is also an arbitrary name.
         fieldName: "wpcontent",
         // GraphQL endpoint, relative to your WordPress home URL.
-        url: "http://34.125.153.63/graphql",
+        url: "https://developmentseeda.co/graphql",
       },
     },
     `gatsby-plugin-react-helmet`,
