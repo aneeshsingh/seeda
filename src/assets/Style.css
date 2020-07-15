@@ -1,0 +1,93 @@
+body {
+  font-family: "Seeda", sans-serif;
+}
+
+.fontblack {
+  font-family: "Seeda", serif;
+  font-weight: 900;
+}
+.fontHeavy {
+  font-family: "Seeda", serif;
+  font-weight: 800;
+}
+.fontBold {
+  font-family: "Seeda", serif;
+  font-weight: 700;
+}
+.fontSemibold {
+  font-family: "Seeda", serif;
+  font-weight: 600;
+}
+.fontMedium {
+  font-family: "Seeda", serif;
+  font-weight: 500;
+}
+.fontRegular {
+  font-family: "Seeda", serif;
+  font-weight: 400;
+}
+.fontLight {
+  font-family: "Seeda", serif;
+  font-weight: 300;
+}
+.fontThin {
+  font-family: "Seeda", serif;
+  font-weight: 200;
+}
+.fontUltraLight {
+  font-family: "Seeda", serif;
+  font-weight: 100;
+}
+
+.primary-button {
+  background-color: #96dde3;
+  border-radius: 0px;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+}
+.primary-button:hover {
+  background-color: #96dde3;
+  border-radius: 0px;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+}
+
+h1 {
+  line-height: 0.9em;
+}
+
+.reduced-margin-for-pattern {
+  margin: -100px 0px;
+}
+
+p {
+  font-weight: 300;
+}
+.smaller-text {
+  font-size: 0.8em;
+}
+
+.seedaInput {
+  border: 1px solid #cdcdcd;
+  border-radius: 0px;
+  padding: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  margin: 5px 0px;
+}
+
+.background-aqua {
+  background-color: #5fe7f2;
+  box-shadow: 0px 2px 44px rgba(72, 160, 168, 0.5);
+  color: #fff;
+  padding: 30px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}

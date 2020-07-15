@@ -1,0 +1,53 @@
+html {
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Black.woff") format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Heavy.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Semibold.woff")
+    format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Medium.woff")
+    format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Regular.woff")
+    format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Thin.woff") format("woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Seeda";
+  src: url("../../static/fonts/SF/SF-Compact-Rounded-Ultralight.woff")
+    format("woff");
+  font-weight: 100;
+}
