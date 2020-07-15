@@ -6,13 +6,13 @@ const ThreeColSection = props => (
       <Row className="my-5 text-center">
         <Col className="py-4">
           <h1>{props.heading}</h1>
-          <p dangerouslySetInnerHTML={{ __html: props.description }} />
+          <p>{props.description}</p>
         </Col>
       </Row>
       <Row className="text-center">
         {props.sections.map(function (section, index) {
           return (
-            <Col key={index}>
+            <Col key={index} md={3}>
               <img
                 src={section.image.mediaItemUrl}
                 alt={section.heading}

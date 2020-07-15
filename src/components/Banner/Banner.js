@@ -22,7 +22,7 @@ const Banner = props => (
         <Col>
           <div>
             <img
-              src="http://localhost/seeda/wp-content/uploads/2020/07/pattern.png"
+              src="https://developmentseeda.co/wp-content/uploads/2020/07/pattern.png"
               alt="Seeda Crawler"
             ></img>
           </div>

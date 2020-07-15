@@ -36,7 +36,7 @@ const AquaBGSection = props => {
                 </div>
                 <br />
                 <h4>{section.heading}</h4>
-                <p dangerouslySetInnerHTML={{ __html: section.description }} />
+                <p>{section.description}</p>
               </Col>
             )
           })}

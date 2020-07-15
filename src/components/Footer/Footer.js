@@ -54,7 +54,7 @@ const Footer = props => (
               <a href={props.facebookLink}>
                 <div className={footerStyles.socialIcons}>
                   <img
-                    src="http://localhost/seeda/wp-content/uploads/2020/07/F.png"
+                    src="https://developmentseeda.co/wp-content/uploads/2020/07/F.png"
                     alt="Facebook"
                   ></img>
                 </div>
@@ -64,7 +64,7 @@ const Footer = props => (
               <a href={props.twitterLink}>
                 <div className={footerStyles.socialIcons}>
                   <img
-                    src="http://localhost/seeda/wp-content/uploads/2020/07/T.png"
+                    src="https://developmentseeda.co/wp-content/uploads/2020/07/T.png"
                     alt="LinkedIn"
                   ></img>
                 </div>
