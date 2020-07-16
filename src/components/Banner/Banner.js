@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 const Banner = props => (
   <div>
-    <Container>
+    <Container className="mt-3">
       <Row className="my-5">
         <Col md={6} className="py-4">
           <h1>{props.title}</h1>
