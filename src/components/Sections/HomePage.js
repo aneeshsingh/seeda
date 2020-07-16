@@ -14,7 +14,7 @@ const HomePage = props => {
       <Header headerLogo={props.title.headerLogo.mediaItemUrl} />
       <Banner
         title={props.title.headerBannerTitle}
-        content={props.title.headerBannerTitle}
+        content={props.title.headerDescription}
         image={props.title.headerImage.mediaItemUrl}
       />
       <ThreeColSection
