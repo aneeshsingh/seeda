@@ -15,7 +15,7 @@ const ColumnRight = props => (
         </Col>
         <Col md={6} className="p-4">
           <h1>{props.heading}</h1>
-          <div dangerouslySetInnerHTML={{ __html: props.description }}></p>
+          <div dangerouslySetInnerHTML={{ __html: props.description }}></div>
           <Link className="primary-button" to="/Signup/">
             Get Started Today &nbsp;&nbsp;<i className="la la-arrow-right"></i>
           </Link>
