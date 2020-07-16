@@ -1,6 +1,7 @@
 import React from "react"
 import footerStyles from "./Footer.module.css"
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
+import { Link } from "gatsby"
 const Footer = props => (
   <footer className={footerStyles.footer}>
     <Container className="text-white">
@@ -43,8 +44,16 @@ const Footer = props => (
           <h5 className="fontSemibold">Navigation</h5>
           <ul>
             <li>Features</li>
-            <li>About</li>
-            <li>Support</li>
+            <li>
+              <Link to="/Terms/" className="link-style-footer">
+                Terms
+              </Link>
+            </li>
+            <li>
+              <Link to="/Privacy/" className="link-style-footer">
+                Privacy
+              </Link>
+            </li>
           </ul>
         </Col>
         <Col md={3}>

@@ -100,3 +100,10 @@ p {
 .link-style:hover {
   color: #24384d;
 }
+.link-style-footer {
+  color: #6e8498;
+}
+
+.link-style-footer:hover {
+  color: #6e8498;
+}

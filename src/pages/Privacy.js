@@ -1,19 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
-import SignupForm from "../components/Forms/SignupForm"
+import PrivacyComponent from "../components/Forms/PrivacyComponent"
+import { graphql } from "gatsby"
 
-const Signup = data => {
+const Privacy = data => {
   return (
     <div>
       {data.data.wpcontent.pages.edges.map(page => (
         <div key={page.node.id} title={page.node.Homepage}>
           <Header headerLogo={page.node.Homepage.headerLogo.mediaItemUrl} />
-          <SignupForm
-            terms={page.node.Homepage.signupText}
-            image={page.node.Homepage.signUpPageImage.mediaItemUrl}
-          />
+          <PrivacyComponent privacy={page.node.Homepage.privacyPolicy} />
           <Footer
             twitterLink={page.node.Homepage.twitterLink}
             facebookLink={page.node.Homepage.facebookLink}
@@ -28,7 +25,7 @@ const Signup = data => {
   )
 }
 
-export default Signup
+export default Privacy
 
 export const query = graphql`
   {
@@ -51,11 +48,8 @@ export const query = graphql`
               headerLogo {
                 mediaItemUrl
               }
-              signupText
+              privacyPolicy
               twitterLink
-              signUpPageImage {
-                mediaItemUrl
-              }
             }
           }
         }

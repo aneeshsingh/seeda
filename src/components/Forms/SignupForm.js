@@ -3,72 +3,60 @@ import { navigate } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
 class SignupForm extends Component {
-  buttonClicked = () => {}
-  state = {
-    title: "",
-    content: "",
-    author: "Max",
-    submitted: false,
-  }
-
-  componentDidMount() {
-    console.log(this.props)
-  }
-  postDataHandler = () => {
-    navigate("/Onboarding/")
-  }
-
   render() {
     return (
       <div>
         <Container>
-          <Row className="my-5">
+          <Row className="my-5 py-5">
             <Col md={6} className="py-4">
               <h1>Get Beta access to our portal</h1>
               <p className="smaller-text p-2 ">Fill-in the form the below</p>
-              <input
-                type="text"
-                value={this.state.title}
-                onChange={event => this.setState({ title: event.target.value })}
-                placeholder="First Name"
-                className="seedaInput"
-              />
-              <input
-                type="text"
-                value={this.state.title}
-                onChange={event => this.setState({ title: event.target.value })}
-                placeholder="Last Name"
-                className="seedaInput"
-              />
-              <input
-                type="text"
-                value={this.state.title}
-                onChange={event => this.setState({ title: event.target.value })}
-                placeholder="Email"
-                className="seedaInput"
-              />
-              <input
-                type="text"
-                value={this.state.title}
-                onChange={event => this.setState({ title: event.target.value })}
-                placeholder="Phone"
-                className="seedaInput"
-              />
-              <button onClick={this.postDataHandler} className="primary-button">
-                Get Started Today &nbsp;&nbsp;
-                <i className="la la-arrow-right"></i>
-              </button>
 
-              <p className="smaller-text p-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dapibus est ac nunc gravida dapibus. Ut tempus neque vitae
-                volutpat faucibus. Quisque euismod purus non eros molestie, non
-                feugiat justo consequat. Phasellus ut felis vehicula, viverra
-                diam non, faucibus est.
-              </p>
+              <form
+                method="post"
+                action="https://developmentseeda.co/processing/"
+              >
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="First Name"
+                  className="seedaInput"
+                />
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Last Name"
+                  className="seedaInput"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  className="seedaInput"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                  className="seedaInput"
+                />
+                <button type="submit" className="primary-button">
+                  Get Started Today &nbsp;&nbsp;
+                  <i className="la la-arrow-right"></i>
+                </button>
+              </form>
+              <p className="smaller-text p-2">{this.props.terms}</p>
             </Col>
             <Col md={6}>
-              <img src={this.props.image} alt="Seeda Crawler"></img>
+              <img
+                src={this.props.image}
+                alt="Seeda Crawler"
+                width="100%"
+              ></img>
             </Col>
           </Row>
         </Container>
