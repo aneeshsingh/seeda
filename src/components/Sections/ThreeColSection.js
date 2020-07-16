@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 const ThreeColSection = props => (
-  <div>
+  <div id="features">
     <Container className="my-5 pb-5">
       <Row className="my-5 text-center">
         <Col className="py-4">

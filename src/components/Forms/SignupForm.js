@@ -68,10 +68,7 @@ class SignupForm extends Component {
               </p>
             </Col>
             <Col md={6}>
-              <img
-                src="http://localhost/seeda/wp-content/uploads/2020/07/Bitmap.jpg"
-                alt="Seeda Crawler"
-              ></img>
+              <img src={this.props.image} alt="Seeda Crawler"></img>
             </Col>
           </Row>
         </Container>
@@ -80,7 +77,7 @@ class SignupForm extends Component {
             <Col>
               <div>
                 <img
-                  src="http://localhost/seeda/wp-content/uploads/2020/07/pattern.png"
+                  src="https://developmentseeda.co/wp-content/uploads/2020/07/pattern.png"
                   alt="Seeda Crawler"
                 ></img>
               </div>

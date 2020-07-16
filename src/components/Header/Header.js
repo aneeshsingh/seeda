@@ -1,9 +1,10 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
+import { headercss } from "./Header.module.css"
 const Header = props => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" fixed="top">
       <Link to="/">
         <img
           src={props.headerLogo}
@@ -16,8 +17,18 @@ const Header = props => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Link to="/Dashboard/">Dashboard</Link>&nbsp;&nbsp;
-          <Link to="/Signup/">Signup</Link>
+          <Link to="/#features" className="link-style">
+            Features
+          </Link>
+          <Link to="/#benefits" className="link-style">
+            Benefits
+          </Link>
+          <Link to="/#howitworks" className="link-style">
+            How it works
+          </Link>
+          <Link to="/Signup/" className="link-style">
+            Contact us
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

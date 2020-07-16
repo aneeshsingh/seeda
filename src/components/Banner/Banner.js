@@ -6,9 +6,10 @@ const Banner = props => (
     <Container className="mt-3">
       <Row className="my-5">
         <Col md={6} className="py-4">
-          <h1>{props.title}</h1>
+          <h1>&nbsp;</h1>
+          <h1 className="pt-5">{props.title}</h1>
           <p dangerouslySetInnerHTML={{ __html: props.content }} />
-          <Link className="primary-button" to="/">
+          <Link className="primary-button" to="/Signup/">
             Get Started Today &nbsp;&nbsp;<i className="la la-arrow-right"></i>
           </Link>
         </Col>

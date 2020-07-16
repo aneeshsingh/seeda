@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import styling from "./AquaBGSection.module.css"
 const AquaBGSection = props => {
   return (
-    <Container fluid className={styling.backgroundAqua}>
+    <Container fluid className={styling.backgroundAqua} id="benefits">
       <Container>
         <Row className="py-5 text-center">
           <Col>
