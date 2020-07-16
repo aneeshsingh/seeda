@@ -43,7 +43,11 @@ const Footer = props => (
         <Col md={3}>
           <h5 className="fontSemibold">Navigation</h5>
           <ul>
-            <li>Features</li>
+            <li>
+              <Link to="/#features" className="link-style-footer">
+                Features
+              </Link>
+            </li>
             <li>
               <Link to="/Terms/" className="link-style-footer">
                 Terms
