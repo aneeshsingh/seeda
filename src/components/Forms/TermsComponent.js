@@ -8,7 +8,7 @@ class PrivacyComponent extends Component {
         <Container>
           <Row className="my-5 py-5">
             <Col className="py-4">
-              <p dangerouslySetInnerHTML={{ __html: this.props.terms }}></p>
+              <div dangerouslySetInnerHTML={{ __html: this.props.terms }}></div>
             </Col>
           </Row>
         </Container>
